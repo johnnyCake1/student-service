@@ -26,7 +26,7 @@ like to get some template answers or putting the issue into priority category.
 ## Contributors
 
 * Gao Zepei
-* Nursezim Kanatbekova
+* Nursezim Kurmanalieva
 * Aiperi Ulukbekova
 * Zheenbek Akimzhanov
 
