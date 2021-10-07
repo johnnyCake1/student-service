@@ -28,6 +28,11 @@ like to get some template answers or putting the issue into priority category.
 Dependency management is done with Maven.  
 Open `pom.xml` file in repository root with IntelliJ IDEA.
 
+## To READ
+
+* [Project management](MANAGEMENT.md)
+* [Documentation](docs/README.md)
+
 ## Contributors
 
 * Gao Zepei
@@ -35,6 +40,6 @@ Open `pom.xml` file in repository root with IntelliJ IDEA.
 * Aiperi Ulukbekova
 * Zheenbek Akimzhanov
 
-## Licence
+## License
 
 * Apache 2.0
