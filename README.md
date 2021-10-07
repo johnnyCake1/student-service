@@ -23,6 +23,11 @@ like to get some template answers or putting the issue into priority category.
 * JUnit
 * GitHub Issues, Release, Pages, Actions, Wiki
 
+## Setup and Build
+
+Dependency management is done with Maven.  
+Open `pom.xml` file in repository root with IntelliJ IDEA.
+
 ## Contributors
 
 * Gao Zepei
