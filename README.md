@@ -31,7 +31,7 @@ Open `pom.xml` file in repository root with IntelliJ IDEA.
 ## Contributors
 
 * Gao Zepei
-* Nursezim Kanatbekova
+* Nursezim Kurmanalieva
 * Aiperi Ulukbekova
 * Zheenbek Akimzhanov
 
