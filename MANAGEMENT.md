@@ -1,5 +1,9 @@
 # Project management
 
+## Commit messages
+
+Let's write super-duper descriptive commit messages! Thanks! 🙏 
+
 ## Pull Requests
 
 If you want to add your changes/new features create your own branch
