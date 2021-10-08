@@ -21,4 +21,4 @@ If you want to add your changes/new features create your own local branch with f
 
 Then push it to remote and create pull request. Merge after PR review to master branch. Finally, delete used branch after merging.
 
-***That's pizdec tactic. Have fun!***
+***That's it for now. Have fun!***
