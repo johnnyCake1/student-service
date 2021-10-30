@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+
+  postgre_db:
+    image: postgres:alpine
+    restart: always
+    environment:
+      POSTGRES_USER: jimbo
+      POSTGRES_PASSWORD: 312
+      POSTGRES_DB: students
+    ports:
+      - '5432:5432'
