@@ -1,5 +1,7 @@
 # Student Service Web Application
 
+App can be accessed here: http://194.37.80.94:8080
+
 ## Description
 
 In our university there are many administrative issues and questions sent by students to coordinators via e-mail
