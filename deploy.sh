@@ -7,7 +7,7 @@ git pull
 
 # build
 ./mvnw clean package -DskipTests
-cp target/docker-spring-boot-postgres-0.0.1-SNAPSHOT.jar src/main/docker
+cp student-service-0.0.1-SNAPSHOT.jar src/main/docker
 
 # shutdown existing containers
 cd src/main/docker
