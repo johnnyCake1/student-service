@@ -18,7 +18,7 @@ jobs:
           distribution: 'adopt'
           cache: maven
       - name: Start DB
-        run: docker-compose start postgre_db
+        run: cd src/main/docker && docker-compose start postgre_db
       - name: Build and Test
         run: mvnw clean package
 
@@ -32,4 +32,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: cd /root/student-service && sh deploy.sh
+          script: sh /root/student-service/deploy.sh
