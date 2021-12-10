@@ -59,7 +59,7 @@ public class UserService implements UserDetailsService {
         if (!StringUtils.isEmpty(user.getEmail())) {
             String message = String.format(
                     "Hello, %s! \n" +
-                            "Welcome to Cwitter. Please, visit this link: http://localhost:8080/activate/%s",
+                            "Welcome to Cwitter. Please, visit this link: http://194.37.80.94:8080/activate/%s",
                     user.getUsername(),
                     user.getActivationCode()
             );
