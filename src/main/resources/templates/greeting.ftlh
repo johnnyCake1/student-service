@@ -6,6 +6,6 @@
 
     <h5>Hello, <#if name != ''>${name}<#else>guest</#if>!</h5>
 
-    This is a simple Twitter clone.
+    This is a simple Student Service Web Application.
 
 </@c.page>
