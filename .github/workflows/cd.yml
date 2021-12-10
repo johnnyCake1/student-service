@@ -7,14 +7,14 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: log into VPS and trigger deploy script
+      - name: Log into VPS and trigger deploy script
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }} # uses secrets stored in the Secrets tab
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
+#          port: ${{ secrets.PORT }}
           script: sh deploy.sh
