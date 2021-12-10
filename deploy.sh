@@ -3,7 +3,8 @@
 echo "Deploying changes..."
 
 # pull from git
-git pull &&
+git reset --hard HEAD &&
+git pull
 
 # build
 ./mvnw clean package -DskipTests &&
