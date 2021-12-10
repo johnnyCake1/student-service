@@ -20,7 +20,7 @@ jobs:
       - name: Start DB
         run: cd src/main/docker && docker-compose run -d postgres_db
       - name: Build and Test
-        run: mvnw clean package
+        run: mvn clean package
 
   deploy:
     runs-on: ubuntu-latest
