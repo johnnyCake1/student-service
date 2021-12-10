@@ -18,7 +18,7 @@ jobs:
           distribution: 'adopt'
           cache: maven
       - name: Start DB
-        run: cd src/main/docker && docker-compose start postgre_db
+        run: cd src/main/docker && docker-compose run postgres_db
       - name: Build and Test
         run: mvnw clean package
 

@@ -8,7 +8,7 @@ services:
     build:
       context: .
     depends_on:
-      - postgre_db
+      - postgres_db
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/postgres
       - SPRING_DATASOURCE_USERNAME=jimbo
@@ -17,7 +17,7 @@ services:
     ports:
       - '8080:8080'
 
-  postgre_db:
+  postgres_db:
     image: postgres:alpine
     container_name: db
     restart: always
