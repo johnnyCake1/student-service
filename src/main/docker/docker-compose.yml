@@ -25,5 +25,7 @@ services:
       POSTGRES_USER: jimbo
       POSTGRES_PASSWORD: 312
       POSTGRES_DB: postgres
+    volumes:
+      - /root/.postgres-data:/var/lib/postgresql/data
     ports:
       - '5432:5432'
