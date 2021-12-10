@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+
+  app:
+    image: 'docker-spring-boot-postgres:latest'
+    container_name: app
+    build:
+      context: .
+    depends_on:
+      - postgre_db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/postgres
+      - SPRING_DATASOURCE_USERNAME=jimbo
+      - SPRING_DATASOURCE_PASSWORD=312
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=validate
+    ports:
+      - '8080:8080'
+
+  postgre_db:
+    image: postgres:alpine
+    container_name: db
+    restart: always
+    environment:
+      POSTGRES_USER: jimbo
+      POSTGRES_PASSWORD: 312
+      POSTGRES_DB: postgres
+    ports:
+      - '5432:5432'

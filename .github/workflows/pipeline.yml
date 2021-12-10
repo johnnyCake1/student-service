@@ -1,0 +1,35 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK 8
+        uses: actions/setup-java@v2
+        with:
+          java-version: '8'
+          distribution: 'adopt'
+          cache: maven
+      - name: Start DB
+        run: docker-compose start postgre_db
+      - name: Build and Test
+        run: mvnw clean package
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log into VPS and trigger deploy script
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }} # uses secrets stored in the Secrets tab
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+#          port: ${{ secrets.PORT }}
+          script: sh deploy.sh
